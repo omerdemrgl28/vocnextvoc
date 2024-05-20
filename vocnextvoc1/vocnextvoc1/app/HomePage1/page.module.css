@@ -1,0 +1,386 @@
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-1deg); }
+    50% { transform: translateX(5px) rotate(1deg); }
+    75% { transform: translateX(-5px) rotate(-1deg); }
+    100% { transform: translateX(0); }
+  }
+  
+  .section1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    width: 100%;
+    height: 35vh;
+  }
+  .section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 15vh;
+    gap:1%;
+  }
+  .section3{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+  }
+  .section4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    gap:5%;
+  }
+  
+  .homeButton1 {
+    background-color: black; 
+    color: white; 
+    width: 20%; 
+    height: 6vh; 
+    border-radius: 10px; 
+    
+  }
+  
+  .homeButton2 {
+    background-color: black; 
+    color: white; 
+    width: 50%; 
+    height: 15vh;
+    border-radius: 10px; 
+  }
+  
+  .sec {
+    width: 55%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(8, 3, 17);
+    border-radius: 35px;
+    margin-top: 2%;
+    border: 2px solid white;
+    font-size: 8vh; /* Yazı boyutunu düşürdük */
+    line-height: 1.2; /* Satır yüksekliğini artırdık */
+    text-align: center; /* Metni ortala */
+  }
+  
+  .sec:hover {
+    border-color: white; 
+  }
+  .sec1{
+    width: 27%; 
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .sec2{
+    width: 30%; 
+    height: 7vh;
+    border-radius: 15px;
+    margin-top: 3%;
+    font-size: 3vh;
+  
+  }
+  .sec2button {
+    width: 14%; 
+    height: 7vh;
+    border-radius: 15px;
+    margin-top: 3%;
+    background-color:darkblue;
+    color: white;
+    border: 2px solid white;
+    padding: 5px; 
+  }
+  .sec2button:hover {
+    border-color: white; 
+  }
+  
+  .buttonscore {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    background-color: rgb(161, 13, 38);
+    border: 2px solid white;
+    color: white;
+    font-size: 10vh;
+    animation: shake 0.5s ease infinite;
+  }
+  .buttonwatch{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    background-color: rgb(7, 7, 39);
+    border: 2px solid white;
+    color: white;
+    font-size: 4vh;
+  }
+  .playbutton {
+    width: 20%;
+    height: 10vh;
+    border-radius: 10px; 
+    background-color: #000; 
+    border: 2px solid #fff; 
+    color: #fff; 
+    font-size: 16px; 
+    text-align: center; 
+    line-height: 50px; 
+    cursor: pointer; 
+  }
+  
+  
+  .playbutton:hover {
+    background-color: #333; 
+  }
+  
+  .wrongArea{
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    max-height: 50vh; /* Maksimum yükseklik belirleyin */
+    overflow-y: auto; /* Dikey kaydırma çubuğunu görüntüleyin */
+    display: flex; /* Flex konteynır oluşturun */
+    flex-wrap: wrap;
+    
+  }
+  
+  .trueArea{
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; 
+    max-height: 50vh; /* Maksimum yükseklik belirleyin */
+    overflow-y: auto; /* Dikey kaydırma çubuğunu görüntüleyin */
+    display: flex; /* Flex konteynır oluşturun */
+    flex-wrap: wrap;
+  }
+  
+  .wrong1 {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .alertSc {
+    position: absolute; /* Mutlak konumlandırma */
+    top: 5%; /* Üst kenara hizala */
+    left: 12.5%; /* Dikey eksende merkezle */
+    transform: translateX(-50%); /* Yatayda merkezle */
+    color:white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 3rem;
+    z-index: 9999; /* Diğer içeriklerin üstünde olmasını sağlar */
+  }
+  .alertSc1 {
+    position: absolute; /* Mutlak konumlandırma */
+    top: 5%; /* Üst kenara hizala */
+    left: 12%; /* Dikey eksende merkezle */
+    transform: translateX(-50%); /* Yatayda merkezle */
+    color:darkmagenta;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 3rem;
+    z-index: 9999; /* Diğer içeriklerin üstünde olmasını sağlar */
+  }
+  
+  
+  
+  
+  .true1 {
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Modalın arkası için koyu bir opaklık */
+  }
+  
+  .modal-content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Modalın kenarları için hafif bir gölge */
+  }
+  
+  
+  
+  .delete {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .delete:hover {
+    color: lightgrey;
+  }
+  
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Arka plan rengi ve opaklık */
+    backdrop-filter: blur(8px); /* Bulanıklık efekti */
+    z-index: 10; /* Diğer elementlerin önünde olması için */
+  }
+  
+  .notificationContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    width: 50%;
+    height: 20vh;
+    font-size: 2rem;
+  }
+  
+  .notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 20vh;
+    transform: translate(-50%, -50%);
+    color: bisque;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 3rem;
+    z-index: 9999;
+    backdrop-filter: blur(50px); /* Arkaplanı bulanıklaştırır */
+    text-align: center; /* Yazıyı ortala */
+  }
+  .notificationContainer1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    width: 50%;
+    height: 30vh;
+    font-size: 2rem;
+  }
+  
+  .notification1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 60vh;
+    transform: translate(-50%, -50%);
+    color: bisque;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    z-index: 9999;
+    backdrop-filter: blur(50px); /* Arkaplanı bulanıklaştırır */
+    
+    border: 1px solid white;
+  }
+  .ruleButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .ruleButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .notification .deleteButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff; /* Beyaz kapatma düğmesi rengi */
+  }
+  .notification1 .deleteButton1 {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    width: 20px; /* Genişliği artırın */
+    height: 20px; /* Yüksekliği artırın */
+    background: none;
+    border: 1px solid white; /* Beyaz kenarlık */
+    cursor: pointer;
+    color: #ffffff; /* Beyaz kapatma düğmesi rengi */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+.notificationList {
+    padding-left: 20px; /* Listenin sol tarafında bir boşluk bırakır */
+    color: #fff;
+}
+.notification1 li {
+    margin-bottom: 7%; /* Her liste öğesi arasında 10 piksel boşluk bırakır */
+}
+.buttoneight{
+    font-size: 3rem;
+}
+  
+  
+  
+  /* Diğer stillendirme kuralları buraya ekleyebilirsiniz */
+  
+  
+  
